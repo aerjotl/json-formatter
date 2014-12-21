@@ -1,7 +1,7 @@
 /*!
  * jsonformatter
  * 
- * Version: 0.2.7 - 2014-12-21T20:19:06.895Z
+ * Version: 0.2.7 - 2014-12-21T20:42:37.624Z
  * License: MIT
  */
 
@@ -65,6 +65,15 @@
 }
 .json-formatter-row .constructor-name {
   cursor: pointer;
+}
+.json-formatter-row .constructor-name:after {
+  content: attr(data-content);
+}
+.json-formatter-row .array-constructor-name {
+  cursor: pointer;
+}
+.json-formatter-row .array-constructor-name .array-length:after {
+  content: attr(data-content);
 }
 .json-formatter-row .toggler {
   font-size: 0.8em;
@@ -140,6 +149,15 @@
 }
 .json-formatter-dark.json-formatter-row .constructor-name {
   cursor: pointer;
+}
+.json-formatter-dark.json-formatter-row .constructor-name:after {
+  content: attr(data-content);
+}
+.json-formatter-dark.json-formatter-row .array-constructor-name {
+  cursor: pointer;
+}
+.json-formatter-dark.json-formatter-row .array-constructor-name .array-length:after {
+  content: attr(data-content);
 }
 .json-formatter-dark.json-formatter-row .toggler {
   font-size: 0.8em;

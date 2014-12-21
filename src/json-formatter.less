@@ -57,6 +57,17 @@
   }
   .constructor-name {
     cursor: pointer;
+    &:after {
+        content: attr(data-content);
+    }
+  }
+  .array-constructor-name {
+    cursor: pointer;
+    .array-length{
+        &:after {
+            content: attr(data-content);
+        }
+    }
   }
 
   .toggler {
